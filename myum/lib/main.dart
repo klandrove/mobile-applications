@@ -35,9 +35,9 @@ class _MyUmAppState extends State<MyUmApp> {
       body: Center(
         child: <Widget>[
           Text("Dashboard"),
-          Text("Calendar"),
-          Text("Profile"),
-          Text("Settings"),
+          Text("Page $currentIndex"),
+          Text("Page $currentIndex"),
+          Text("Page $currentIndex"),
         ][currentIndex],
         ),
       bottomNavigationBar: NavigationBar(
@@ -51,14 +51,14 @@ class _MyUmAppState extends State<MyUmApp> {
             icon: Icon(Icons.dashboard),
             label: "Dashboard"),
           NavigationDestination(
-            icon: Icon(Icons.calendar_month_outlined),
-            label: "Calendar"),
+            icon: Icon(Icons.pages),
+            label: "Page 1"),
           NavigationDestination(
-            icon: Icon(Icons.account_box_outlined),
-            label: "Profile"),
+            icon: Icon(Icons.pages),
+            label: "Page 2"),
           NavigationDestination(
-            icon: Icon(Icons.settings_outlined),
-            label: "Settings"),
+            icon: Icon(Icons.pages),
+            label: "Page 3"),
       ])
     );
   }
